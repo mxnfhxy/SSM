@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/demo")
 public class HappinessController {
@@ -14,14 +17,14 @@ public class HappinessController {
     private HappinessService happinessService;
 
     @RequestMapping("/query")
-    public Happiness testQuery(){
-        return happinessService.selectService("北京");
+    public List<Map<String, Object>> testQuery(){
+        return happinessService.selectService("西安");
     }
 
     @RequestMapping("/insert")
-    public Happiness testInsert(){
+    public List<Map<String, Object>> testInsert(){
         happinessService.insertService();
-        return happinessService.selectService("西安");
+        return happinessService.selectService("长安");
     }
 
 }

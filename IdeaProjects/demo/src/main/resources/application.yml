@@ -1,13 +1,17 @@
 #配置数据源
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/dianping?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/ssm_debug01
     username: root
     password: 123456
     # password in company is mxn123628
     driver-class-name: com.mysql.jdbc.Driver
+
+#指定mybatis映射文件的地址
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
  # ---------------------
   #作者：椰子Tyshawn
-  #来源：CSDN
+  #来源：CSDN..?useUnicode=true&characterEncoding=utf8
   #原文：https://blog.csdn.net/litianxiang_kaola/article/details/79481422
   #版权声明：本文为博主原创文章，转载请附上博文链接！
