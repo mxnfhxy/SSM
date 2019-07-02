@@ -17,14 +17,14 @@ public class HappinessController {
     private HappinessService happinessService;
 
     @RequestMapping("/query")
-    public List<Map<String, Object>> testQuery(){
-        return happinessService.selectService("西安");
+    public List<Map<String, Happiness>> testQuery(){
+        return happinessService.selectService("xian");
     }
 
     @RequestMapping("/insert")
-    public List<Map<String, Object>> testInsert(){
+    public List<Map<String, Happiness>> testInsert(){
         happinessService.insertService();
-        return happinessService.selectService("长安");
+        return happinessService.selectService("changan");
     }
 
 }

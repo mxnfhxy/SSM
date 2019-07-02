@@ -20,17 +20,16 @@ public class HappinessService {
         return happinessDao.findHappinessByCity(city);
     }***/
 
-    public List<Map<String, Object>> selectService(String city) {
+    public List<Map<String, Happiness>> selectService(String city) {
         return happinessDao.findHappinessByCity(city);
     }
 
 
-
     @Transactional
     public void insertService(){
-        happinessDao.insertHappiness("西安", 9421);
+        happinessDao.insertHappiness("xian", 9421);
         //int a = 1 / 0; //模拟故障
-        happinessDao.insertHappiness("长安", 1294);
+        happinessDao.insertHappiness("changan", 1294);
     }
 
 
