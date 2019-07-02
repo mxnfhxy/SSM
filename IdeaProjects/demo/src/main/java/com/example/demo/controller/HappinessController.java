@@ -18,6 +18,7 @@ public class HappinessController {
 
     @RequestMapping("/query")
     public List<Map<String, Object>> testQuery(){
+
         return happinessService.selectService("xian");
     }
 
@@ -25,6 +26,7 @@ public class HappinessController {
     public List<Map<String, Object>> testInsert(){
         happinessService.insertService();
         return happinessService.selectService("西安");
+
     }
 
 }

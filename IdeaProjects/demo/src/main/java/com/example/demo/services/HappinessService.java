@@ -27,7 +27,7 @@ public class HappinessService {
 
     @Transactional
     public void insertService(){
-        happinessDao.insertHappiness("西安", 9421);
+        happinessDao.insertHappiness("xian", 9421);
         //int a = 1 / 0; //模拟故障
         happinessDao.insertHappiness("changan", 1294);
     }

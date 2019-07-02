@@ -15,11 +15,13 @@ public interface HappinessDao {
     //Happiness findHappinessByCity(@Param("city") String city);
     List<Map<String, Object>>findHappinessByCity(@Param("city") String city);
 
+
     ////@Insert("INSERT INTO happiness(city, num) VALUES(#{city}, #{num})")
     int insertHappiness(@Param("city") String city, @Param("num") Integer num);
      ***/
     @Select("SELECT * FROM happiness WHERE city = #{city}")
     List<Map<String, Object>> findHappinessByCity(@Param("city") String city);
+
     //int insertHappiness(HashMap<String, Object> map);
     @Insert("INSERT INTO happiness(city, num) VALUES(#{city}, #{num})")
     int insertHappiness(@Param("city") String city, @Param("num") Integer num);

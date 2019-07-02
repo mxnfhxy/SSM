@@ -11,6 +11,7 @@ public class Happiness {
     private Integer num;
    // private List<Map<String, Object>>cities ;
 
+
     public void setId(Long id) {
         this.id = id;
     }
