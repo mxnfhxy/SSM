@@ -1,6 +1,7 @@
 package com.example.demo.domain;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -8,7 +9,7 @@ public class Happiness {
     private Long id;
     private String city;
     private Integer num;
-    private List<Map<String, Object>> cities = new ArrayList<Map<String, Object>>();
+   // private List<Map<String, Object>>cities ;
 
     public void setId(Long id) {
         this.id = id;
@@ -34,11 +35,14 @@ public class Happiness {
         return num;
     }
 
-    public void setCities(List<Map<String, Object>> cities) {
+/***
+    public void setCities(List<Map<String, Object>>cities) {
         this.cities = cities;
     }
 
-    public List<Map<String, Object>> getCities() {
+    public List<Map<String, Object>>getCities() {
         return cities;
     }
+ ***/
+
 }

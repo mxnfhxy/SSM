@@ -18,13 +18,13 @@ public class HappinessController {
 
     @RequestMapping("/query")
     public List<Map<String, Object>> testQuery(){
-        return happinessService.selectService("西安");
+        return happinessService.selectService("xian");
     }
 
     @RequestMapping("/insert")
     public List<Map<String, Object>> testInsert(){
         happinessService.insertService();
-        return happinessService.selectService("长安");
+        return happinessService.selectService("西安");
     }
 
 }
